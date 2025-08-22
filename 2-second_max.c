@@ -36,8 +36,27 @@ int main(void)
 {
 	int my_array1[] = {31, 6, 7, 22, 17};
 	int size1 = sizeof(my_array1) / sizeof(my_array1[0]);
-
+	
+	printf("{31, 6, 7, 22, 17}");
 	find_second_max(my_array1, size1);
+
+	int my_array2[] = {6, 31, 7, 22, 17};
+	int size2 = sizeof(my_array2) / sizeof(my_array2[0]);
+
+	printf("{6, 31, 7, 22, 17}");
+	find_second_max(my_array2, size2);
+
+	int my_array3[] = {30, 6, 30, 23, 17};
+	int size3 = size2;
+
+	printf("{30, 6, 30, 23, 17}");
+	find_second_max(my_array3, size3);
+
+	int my_array4[] = {23, 30, 30, 6, 17};
+	int size4 = size2;
+
+	printf("{23, 30, 30, 6, 17}");
+	find_second_max(my_array4, size4);
 
 	return (0);
 }
