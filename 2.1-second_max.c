@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <limits.h>
 /**
  * find_second_max - Prints the second maximum value of an array.
  * @arr: Pointer to the integer array.
@@ -12,16 +11,9 @@
 
 void find_second_max(int *arr, int size)
 {
-	if (size < 2)
-	{
-		printf("Array must have at least 2 integers to find a second max.");
-		return;
-
-	}
-
 	int i;
-	int max = INT_MIN;
-	int second_max = INT_MIN;
+	int max = arr[0];
+	int second_max = arr[0];
 
 	for (i = 0; i < size; i++)
 	{
