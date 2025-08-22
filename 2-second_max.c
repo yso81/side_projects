@@ -12,13 +12,6 @@
 
 void find_second_max(int *arr, int size)
 {
-	if (size < 2)
-	{
-		printf("Array must have at least 2 integers to find a second max.");
-		return;
-
-	}
-
 	int i;
 	int max = INT_MIN;
 	int second_max = INT_MIN;

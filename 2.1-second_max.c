@@ -38,5 +38,10 @@ int main(void)
 
 	find_second_max(my_array1, size1);
 
+	int my_array2[] = {6, 31, 7, 22, 17};
+	int size2 = sizeof(my_array2) / sizeof(my_array2[0]);
+
+	find_second_max(my_array2, size2);
+
 	return (0);
 }
