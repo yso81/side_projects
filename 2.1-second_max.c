@@ -13,13 +13,12 @@ void find_second_max(int *arr, int size)
 {
 	int i;
 	int max = arr[0];
-	int second_max = arr[0];
+	int second_max = arr[1];
 
-	for (i = 0; i < size; i++)
+	for (i = 1; i < size; i++)
 	{
 		if (arr[i] > max)
 		{
-			second_max = max;
 			max = arr[i];
 		}
 		else if (arr[i] > second_max && arr[i] < max)
@@ -27,9 +26,15 @@ void find_second_max(int *arr, int size)
 			second_max = arr[i];
 		}
 	}
+
+	if (second_max > max)
 	{
-		printf("The second maximum value is: %d\n", second_max);
+		int tmp = max;
+
+		max = second_max;
+		second_max = tmp;
 	}
+	printf("The second maximum value is: %d\n", second_max);
 }
 int main(void)
 {
