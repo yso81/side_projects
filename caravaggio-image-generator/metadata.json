@@ -1,0 +1,5 @@
+{
+  "name": "Caravaggio Image Generator",
+  "description": "A web application that generates a modern interpretation of Caravaggio's style using the Gemini API and the imagen-4.0-generate-001 model.",
+  "requestFramePermissions": []
+}
